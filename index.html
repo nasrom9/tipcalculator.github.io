@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Tip calculator app</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1 class="logo text-center mt-3 mb-3">Splitter</h1>
+  <p class="text-center my-3">Designed By <a href="https://www.facebook.com/profile.php?id=100002716394351">VEE</a></p>
+
+  <div class="container my-3">
+    <div class="card input">
+      <form id="form">
+        <p class="my-2">Bill</p>
+        <div class="input-bar">
+          <input class="mb-2" type="text" placeholder="0" id="bill">
+        <img class="image" src="/images/icon-dollar.svg" alt="">
+        </div>
+        
+        
+        <p class="my-2">Select Tip %</p>
+        <!-- <label class="my-2" for="selected-tip">Select Tip %</label> -->
+        
+        <div class="tips mb-2">
+          <div class="tip1 text-center">5%</div>
+          <div class="tip2 text-center">10%</div>
+          <div class="tip3 text-center">15%</div>
+          <div class="tip4 text-center">20%</div>
+          <div class="tip5 text-center">25%</div>
+          <input id="custom" type="text" placeholder="Custom">
+        </div>
+        <p class="warning">Number of people</p>
+        <p class="red-warning">Can't be zero!</p>
+        <div class="input-bar">
+          <input class="mb-2" type="text" placeholder="0" id="number-of-people">
+          <img src="/images/icon-person.svg" class="image" alt="">
+        </div>
+        
+      </form>
+    </div>  
+    <div class="card output">
+      <div class="tip-amount row">
+        <div>
+          <p class="upper-label">Tip Amount</p>
+          <p class="lower-label">/ Person</p>
+        </div>
+        <h3 id="tip-amount">$0.0</h3>
+      </div>
+      <div class="total row">
+        <div>
+          <p class="upper-label">Total</p>
+          <p class="lower-label">/ Person</p>
+        </div>
+        <h3 id="total-amount">$0.0</h3>
+      </div>
+      <div id="reset">Reset</div>
+  
+  </div>
+  
+  <script src="JS/app.js"></script>
+</body>
+</html>
